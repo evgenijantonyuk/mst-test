@@ -1,0 +1,255 @@
+
+@font-face {
+    font-family: "Prata", sans-serif;
+    src:
+            url("/fonts/Prata-Regular.woff2") format("woff2"),
+            url("/fonts/Prata-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #282829;
+}
+
+li {
+    list-style: none;
+}
+/* ======================= */
+.container {
+    width: 1920px;
+}
+
+.hero {
+    display: flex;
+    background-color: #222;
+    justify-content: space-between;
+}
+
+.hero__content {
+    padding-left: 185px;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 100px;
+    width: 155px;
+    height: 30px;
+}
+
+.items {
+    display: flex;
+    gap: 20px;
+}
+
+.item {}
+
+.item__link {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #fff;
+}
+
+.hero__image {
+    max-width: 763px;
+    background-size: cover;
+}
+
+.hero-round {
+    width: 39px;
+    height: 37px;
+}
+
+.hero__text-header {
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin: 0;
+    margin-bottom: 50px;
+    padding-top: 150px;
+}
+
+.hero__text {
+    margin: 0;
+    margin-bottom: 64px;
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.hero__list {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.hero__btn {
+    text-transform: uppercase;
+    padding: 32px 50px;
+}
+/* ============================ */
+.info__block {
+    display: flex;
+    padding: 100px 0;
+    margin-bottom: 100px;
+}
+
+.info__list {
+    padding: 35px;
+}
+
+.info__img {
+    max-width: 622px;
+}
+
+.info__list-item {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.info__list-icon {
+    width: 58px;
+    height: 47px;
+}
+
+.info__list-text {
+    color: #ffffff;
+}
+/* =============================== */
+.form {
+    margin-bottom: 100px;
+    background-color: #282829;
+    display: flex;
+    justify-content: center;
+}
+
+.form__field {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.form__left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form__right {
+    position: relative;
+}
+
+.form__girl {
+    position: absolute;
+    background-image: url(../images/women.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -135px;
+    right: 90px;
+}
+
+/* ============================================ */
+.footer {
+    background-color: #222;
+}
+
+.footer-list {
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-top: 2px solid #D5C9BE;
+    border-bottom: 2px solid #D5C9BE;
+}
+
+.footer__items {
+    display: flex;;
+    gap: 60px;
+}
+
+.footer-item__link {
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #fff;
+}
+
+.footer__content {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__btn {
+    text-transform: uppercase;
+}
+
+.footer__policy {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__policy-item {
+    color: #ffffff;
+}
+
+
+@media  screen and (max-width: 1250px) {
+    .hero {
+        width: 100%;
+        flex-direction: column;
+    }
+    .hero__content {
+        padding: 25px;
+    }
+    .hero__image {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
